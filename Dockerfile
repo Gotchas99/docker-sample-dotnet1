@@ -5,7 +5,6 @@ RUN dotnet restore
 
 # copy and build everything else
 COPY . .
-#RUN dotnet run
 RUN dotnet publish --output /out/. --configuration Release
+WORKDIR /out
 ENTRYPOINT ["dotnet", "dotnetapp.dll"]
-#RUN dotnet publish -c Release -o out
