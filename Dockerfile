@@ -7,4 +7,4 @@ RUN dotnet restore
 COPY . .
 RUN dotnet publish --output /out/. --configuration Release
 WORKDIR /out
-ENTRYPOINT ["dotnet", "dotnetapp.dll"]
+ENTRYPOINT ["dotnet", "app.dll"]
