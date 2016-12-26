@@ -1,5 +1,5 @@
 FROM microsoft/aspnetcore-build
-RUN groupadd mygroup && useradd -m -g mygroup myuser.
+RUN groupadd mygroup && useradd -m -g mygroup myuser
 USER myuser
 WORKDIR /home/myuser
 run mkdir app
