@@ -8,7 +8,7 @@ public class Program
         new WebHostBuilder()
             .UseUrls("http://*:5000/")
             .UseKestrel()
-            .Configure(a => a.Run(c => c.Response.WriteAsync("Hi out there!")))
+            .Configure(a => a.Run(c => c.Response.WriteAsync("Hi, is there anybody out there?")))
             .Build()
             .Run();
     }
