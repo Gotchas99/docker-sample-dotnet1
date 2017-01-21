@@ -10,7 +10,7 @@ RUN dotnet restore
 COPY . .
 RUN dotnet publish --output /home/myuser/out/. --configuration Release
 RUN chmod -R +w /home/myuser
-# USER myuser
+USER myuser
 WORKDIR /home/myuser/out
 #EXPOSE 80 5000
 EXPOSE 5000
