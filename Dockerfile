@@ -1,8 +1,7 @@
 FROM microsoft/aspnetcore-build
 RUN groupadd mygroup && useradd -m -g mygroup myuser
-WORKDIR /home/myuser
-RUN mkdir app
-WORKDIR app
+RUN mkdir /home/myuser/app
+WORKDIR /home/myuser/app
 COPY project.json .
 RUN dotnet restore
 
