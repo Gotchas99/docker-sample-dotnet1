@@ -1,1 +1,0 @@
-# docker-sample-dotnet1
